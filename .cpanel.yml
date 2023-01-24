@@ -9,3 +9,4 @@ deployment:
     - /bin/cp browserconfig.xml $DEPLOYPATH
     - /bin/cp favicon.ico favicon.svg $DEPLOYPATH
     - /bin/cp -R fonts images css $DEPLOYPATH
+    - /bin/cp site.webmanifest $DEPLOYPATH
