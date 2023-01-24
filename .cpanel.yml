@@ -1,0 +1,12 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/kehystys/public_html/
+    - export SRCPATH=/home/kehystys/kehystyspalvelu
+    - /bin/cp $SRCPATH/index.html $DEPLOYPATH
+    - /bin/cp $SRCPATH/nav.js $DEPLOYPATH
+    - /bin/cp $SRCPATH/dark.js $DEPLOYPATH
+    - /bin/cp $SRCPATH/*.png $DEPLOYPATH
+    - /bin/cp $SRCPATH/browserconfig.xml $DEPLOYPATH
+    - /bin/cp $SRCPATH/favicon.ico $SRCPATH/favicon.svg $DEPLOYPATH
+    - /bin/cp -R $SRCPATH/fonts $SRCPATH/images $SRCPATH/css $DEPLOYPATH
