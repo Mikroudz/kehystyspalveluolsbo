@@ -5,7 +5,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
     #sidebyside {
-        padding: 50px 0;
+        padding: 30px 0;
         .container {
             display: flex;
             justify-content: center;
@@ -55,8 +55,8 @@
             position: relative;
             margin: auto;
             width: 611/16em;
-            height: 861/16em;
-            font-size:~"min(1.4vw, 1em)"; // scales the image-box down
+            height: 700/16em;
+            font-size:~"min(2vw, 1em)"; // scales the image-box down
 
             &:before {
                 content: '';
@@ -76,7 +76,7 @@
                 display: block;
                 height: 516/16em;
                 width: 460/16em;
-                background: url("/images/content-circles.svg");
+                background: url("../images/content-circles.svg");
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -135,7 +135,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
     #sidebyside-reverse {
-        padding: 50px 0;
+        padding: 30px 0;
         .container {
             display: flex;
             justify-content: center;
@@ -185,8 +185,8 @@
             position: relative;
             margin: auto;
             width: 611/16em;
-            height: 861/16em;
-            font-size:~"min(1.4vw, 1em)"; // scales the image-box down
+            height: 600/16em;
+            font-size:~"min(2vw, 1em)"; // scales the image-box down
 
             &:before {
                 content: '';
@@ -206,7 +206,7 @@
                 display: block;
                 height: 516/16em;
                 width: 460/16em;
-                background: url("/images/content-circles.svg");
+                background: url("../images/content-circles.svg");
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -231,14 +231,14 @@
 /* Inbetween */
 @media only screen and (min-width: 666px) {
     #sidebyside-reverse {
-        padding: 100/16em 0;
+        padding: 60/16em 0;
     }
 }   
 
 /* Small Desktop */
 @media only screen and (min-width: 1300px) {
     #sidebyside-reverse {
-        padding: 150/16em 0;
+        padding: 70/16em 0;
         .container {
             max-width: 1391/16em;
             flex-direction: row;
@@ -271,6 +271,105 @@
 }
 
 /*-- -------------------------- -->
+<---   Side By Side Gallery     -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    #sidebyside-gallery {
+        padding: 30px 0;
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+            .button-solid {
+                margin-top: 25/14em;
+
+            }
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            gap: 30/16em;
+            margin: auto;
+            flex-wrap: wrap;
+            font-size:~"min(1.3vw, 1em)";
+        }
+
+        h4 {
+            &.title {
+                font-weight: 900;
+                font-size: 30/16em;
+                line-height: 58/30;
+                color: #000;
+                position: relative;
+                margin-bottom: 30/30em;
+                text-align: center;
+            }
+        }
+        picture {
+            &:nth-of-type(1) {
+                width: 480/16em;
+                height: 379/16em;
+            }
+
+            &:nth-of-type(2) {
+                width: 420/16em;
+                height: 581/16em;
+            }
+
+            &:nth-of-type(3) {
+                width: 420/16em;
+                height: 581/16em;
+            }
+        }
+
+        .image-box {
+            display: block;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* Inbetween */
+@media only screen and (min-width: 666px) {
+    #sidebyside-gallery {
+        padding: 50/16em 0;
+    }
+}   
+
+/* Small Desktop */
+@media only screen and (min-width: 1300px) {
+    #sidebyside-gallery {
+        padding: 70/16em 0;
+        .container {
+            max-width: 1400/16em;
+        }
+
+        .content {
+            margin: 0;
+            width: 60%;
+        }
+
+    }
+}
+
+
+/*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/
 
@@ -287,14 +386,22 @@
             height: 100%;
             width: 100%;
             background: #000;
-            opacity: .7;
+            opacity: .4;
             top: 0;
             left: 0;
             z-index: -1;
         }
-
         .container {
             text-align: center;
+            a {
+                text-decoration: underline;
+                color: rgb(250, 250, 250);
+                line-height: 21/18;
+                transition: color .3s;
+                &:hover {
+                    color: var(--primary);
+                }
+            }
         }
 
         picture {
@@ -326,7 +433,7 @@
         }
 
         p {
-            color: #fff;
+            color: rgb(250, 250, 250);
             text-align: center;
             opacity: 1;
             margin: auto;
@@ -386,7 +493,7 @@
                 height: 100%;
                 width: 100%;
                 background: #000;
-                opacity: .7;
+                opacity: .4;
                 top: 0;
                 left: 0;
                 z-index: 1;

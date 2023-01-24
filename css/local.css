@@ -4,7 +4,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #sidebyside {
-    padding: 50px 0;
+    padding: 30px 0;
   }
   #sidebyside .container {
     display: flex;
@@ -47,8 +47,8 @@
     position: relative;
     margin: auto;
     width: 38.1875em;
-    height: 53.8125em;
-    font-size: min(1.4vw, 1em);
+    height: 43.75em;
+    font-size: min(2vw, 1em);
   }
   #sidebyside .image-box:before {
     content: '';
@@ -67,7 +67,7 @@
     display: block;
     height: 32.25em;
     width: 28.75em;
-    background: url("/images/content-circles.svg");
+    background: url("../images/content-circles.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #sidebyside-reverse {
-    padding: 50px 0;
+    padding: 30px 0;
   }
   #sidebyside-reverse .container {
     display: flex;
@@ -160,8 +160,8 @@
     position: relative;
     margin: auto;
     width: 38.1875em;
-    height: 53.8125em;
-    font-size: min(1.4vw, 1em);
+    height: 37.5em;
+    font-size: min(2vw, 1em);
   }
   #sidebyside-reverse .image-box:before {
     content: '';
@@ -180,7 +180,7 @@
     display: block;
     height: 32.25em;
     width: 28.75em;
-    background: url("/images/content-circles.svg");
+    background: url("../images/content-circles.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -201,13 +201,13 @@
 /* Inbetween */
 @media only screen and (min-width: 666px) {
   #sidebyside-reverse {
-    padding: 6.25em 0;
+    padding: 3.75em 0;
   }
 }
 /* Small Desktop */
 @media only screen and (min-width: 1300px) {
   #sidebyside-reverse {
-    padding: 9.375em 0;
+    padding: 4.375em 0;
   }
   #sidebyside-reverse .container {
     max-width: 86.9375em;
@@ -235,6 +235,86 @@
   }
 }
 /*-- -------------------------- -->
+<---   Side By Side Gallery     -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #sidebyside-gallery {
+    padding: 30px 0;
+  }
+  #sidebyside-gallery .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #sidebyside-gallery .container .button-solid {
+    margin-top: 1.78571429em;
+  }
+  #sidebyside-gallery .gallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.875em;
+    margin: auto;
+    flex-wrap: wrap;
+    font-size: min(1.3vw, 1em);
+  }
+  #sidebyside-gallery h4.title {
+    font-weight: 900;
+    font-size: 1.875em;
+    line-height: 1.93333333;
+    color: #000;
+    position: relative;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  #sidebyside-gallery picture:nth-of-type(1) {
+    width: 30em;
+    height: 23.6875em;
+  }
+  #sidebyside-gallery picture:nth-of-type(2) {
+    width: 26.25em;
+    height: 36.3125em;
+  }
+  #sidebyside-gallery picture:nth-of-type(3) {
+    width: 26.25em;
+    height: 36.3125em;
+  }
+  #sidebyside-gallery .image-box {
+    display: block;
+    position: relative;
+  }
+  #sidebyside-gallery .image-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Inbetween */
+@media only screen and (min-width: 666px) {
+  #sidebyside-gallery {
+    padding: 3.125em 0;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 1300px) {
+  #sidebyside-gallery {
+    padding: 4.375em 0;
+  }
+  #sidebyside-gallery .container {
+    max-width: 87.5em;
+  }
+  #sidebyside-gallery .content {
+    margin: 0;
+    width: 60%;
+  }
+}
+/*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/
 /* Mobile */
@@ -250,13 +330,22 @@
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .7;
+    opacity: 0.4;
     top: 0;
     left: 0;
     z-index: -1;
   }
   #cta .container {
     text-align: center;
+  }
+  #cta .container a {
+    text-decoration: underline;
+    color: #fafafa;
+    line-height: 1.16666667;
+    transition: color 0.3s;
+  }
+  #cta .container a:hover {
+    color: var(--primary);
   }
   #cta picture {
     position: absolute;
@@ -284,7 +373,7 @@
     text-align: center;
   }
   #cta p {
-    color: #fff;
+    color: #fafafa;
     text-align: center;
     opacity: 1;
     margin: auto;
@@ -340,7 +429,7 @@
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .7;
+    opacity: 0.4;
     top: 0;
     left: 0;
     z-index: 1;

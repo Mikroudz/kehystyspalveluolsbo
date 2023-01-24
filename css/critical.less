@@ -20,7 +20,7 @@
             height: 100%;
             width: 100%;
             background: #000;
-            opacity: .65;
+            opacity: .3;
             top: 0;
             left: 0;
             z-index: -10;
@@ -131,7 +131,7 @@
     #hero {
         padding-top: 273/16em;
         padding-bottom: 307/16em;
-        background: url("../images/landing.jpg");
+        background: url("../images/vaaka_iso.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -159,7 +159,7 @@
         background: #fff;
         width: 90%;
         max-width: 1320/16em;
-        padding: 50/16em 20/16em;
+        padding: 30/16em 20/16em;
         border-top: 6/16em solid var(--primary);
         box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
         margin-bottom: 50/16em;
@@ -168,6 +168,7 @@
             width: 100%;
             max-width: 357/16em;
             margin: auto;
+            
             margin-bottom: 50/16em;
             &:last-of-type {
                 margin-bottom: 0;
@@ -191,7 +192,7 @@
             }
             h2 {
                 text-align: center;
-                font-size: 32/16em;
+                font-size: 24/16em;
                 line-height: 27/20em;
                 font-weight: 700;
                 color: #1a1a1a;
@@ -212,13 +213,13 @@
     .services {
         font-size:~"min(1.8vw, 1em)";
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         width: 98%;
 
         .card {
             margin: 0;
-            max-width: 325/16em;
+            max-width: 100%;
         }
     }
 }
@@ -226,7 +227,7 @@
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
     .services {
-        padding: 50/16em 80/16em;
+        padding: 30/16em 80/16em;
 
         .card {
             max-width: 357/16em;
