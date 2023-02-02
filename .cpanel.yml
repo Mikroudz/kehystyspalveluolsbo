@@ -3,6 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/kehystys/public_html/
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp sitemap.xml $DEPLOYPATH
     - /bin/cp nav.js $DEPLOYPATH
     - /bin/cp dark.js $DEPLOYPATH
     - /bin/cp *.png $DEPLOYPATH
