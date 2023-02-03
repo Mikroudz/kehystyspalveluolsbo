@@ -11,3 +11,4 @@ deployment:
     - /bin/cp favicon.ico favicon.svg $DEPLOYPATH
     - /bin/cp -R fonts images css $DEPLOYPATH
     - /bin/cp site.webmanifest $DEPLOYPATH
+    - /bin/cp robots.txt $DEPLOYPATH
