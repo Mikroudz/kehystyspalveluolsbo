@@ -638,6 +638,8 @@
     width: 100%;
     width: 21.92857143em;
     margin: auto;
+    font-size: 1.125em;
+    line-height: 1.5em;
   }
   #footer .right-section {
     width: 96%;
