@@ -63,6 +63,18 @@
     margin: auto;
     width: 100%;
     max-width: 14.125em;
+    margin-bottom: 1.1em;
+    position: relative;
+  }
+  #hero h2 {
+    font-weight: 500;
+    font-size: min(10vw, 2em);
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    margin: auto;
+    width: 100%;
+    max-width: 14.125em;
     margin-bottom: 1.4375em;
     position: relative;
   }
